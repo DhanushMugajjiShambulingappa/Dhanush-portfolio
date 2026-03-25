@@ -164,6 +164,15 @@ function Hero() {
             >
               Talk to AI Agent
             </button>
+            <a
+              href={process.env.PUBLIC_URL + '/DhanushMugajjiShambulingappa_Resume.pdf'}
+              download="DhanushMugajjiShambulingappa_Resume.pdf"
+              style={{ padding: '0.75rem 2.2rem', background: 'none', border: '1px solid rgba(212,175,55,0.4)', borderRadius: '6px', color: 'var(--gold)', fontSize: '13px', letterSpacing: '1px', textTransform: 'uppercase', cursor: 'pointer', fontFamily: 'var(--font-body)', transition: 'background 0.2s', textDecoration: 'none', display: 'inline-block' }}
+              onMouseEnter={e => e.currentTarget.style.background = 'rgba(212,175,55,0.08)'}
+              onMouseLeave={e => e.currentTarget.style.background = 'none'}
+            >
+              Download Resume
+            </a>
           </motion.div>
         </div>
       </div>
