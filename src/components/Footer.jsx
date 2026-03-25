@@ -12,7 +12,7 @@ function Footer() {
     { id: 'projects', label: 'Projects' },
     { id: 'experience', label: 'Experience' },
     { id: 'patent', label: 'Patent' },
-    { id: 'certifications', label: 'Certifications' },
+    { id: 'certifications', label: 'Certification Courses' },
     { id: 'activities', label: 'Activities' },
     { id: 'ai', label: 'AI Agent' },
     { id: 'contact', label: 'Contact' },

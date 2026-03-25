@@ -30,7 +30,7 @@ function Certifications() {
           </h2>
           <div style={{ width: '60px', height: '2px', background: 'var(--gold)', marginBottom: '1rem', opacity: 0.7 }} />
           <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', marginBottom: '3rem' }}>
-            Click on any card to view the scanned certificate.
+            Click on any card to view the certificate.
           </p>
         </motion.div>
 
