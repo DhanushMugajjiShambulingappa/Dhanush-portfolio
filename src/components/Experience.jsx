@@ -124,8 +124,8 @@ function Experience() {
                 Connect
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-                <a href="mailto:dmugajji@asu.edu" style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                  <span style={{ color: 'var(--gold)', opacity: 0.7 }}>✉</span> dmugajji@asu.edu
+                <a href="mailto:dhanushmush2002@gmail.com" style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                  <span style={{ color: 'var(--gold)', opacity: 0.7 }}>✉</span> dhanushmush2002@gmail.com
                 </a>
                 <a href="tel:2603644981" style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                   <span style={{ color: 'var(--gold)', opacity: 0.7 }}>✆</span> 260-364-4981
