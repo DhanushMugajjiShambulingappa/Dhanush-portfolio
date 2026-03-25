@@ -127,9 +127,6 @@ function Experience() {
                 <a href="mailto:dhanushmush2002@gmail.com" style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                   <span style={{ color: 'var(--gold)', opacity: 0.7 }}>✉</span> dhanushmush2002@gmail.com
                 </a>
-                <a href="tel:2603644981" style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                  <span style={{ color: 'var(--gold)', opacity: 0.7 }}>✆</span> 260-364-4981
-                </a>
                 <a href="https://linkedin.com/in/dhanushshambulingappa" target="_blank" rel="noreferrer" style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                   <span style={{ color: 'var(--gold)', opacity: 0.7 }}>in</span> linkedin.com/in/dhanushshambulingappa
                 </a>

@@ -16,8 +16,7 @@ function Contact() {
   };
 
   const contacts = [
-    { label: 'Email', value: 'dmugajji@asu.edu', href: 'mailto:dmugajji@asu.edu' },
-    { label: 'Phone', value: '260-364-4981', href: 'tel:2603644981' },
+    { label: 'Email', value: 'dhanushmush2002@gmail.com', href: 'mailto:dhanushmush2002@gmail.com' },
     { label: 'LinkedIn', value: 'linkedin.com/in/dhanushshambulingappa', href: 'https://linkedin.com/in/dhanushshambulingappa' },
     { label: 'GitHub', value: 'github.com/DhanushMugajjiShambulingappa', href: 'https://github.com/DhanushMugajjiShambulingappa' },
   ];

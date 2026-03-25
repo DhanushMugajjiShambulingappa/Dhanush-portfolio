@@ -7,8 +7,7 @@ Here is everything you know about Dhanush:
 
 PERSONAL INFO:
 - Full name: Dhanush Mugajji Shambulingappa
-- Email: dmugajji@asu.edu
-- Phone: 260-364-4981
+- Email: dhanushmush2002@gmail.com
 - LinkedIn: linkedin.com/in/dhanushshambulingappa
 - GitHub: github.com/DhanushMugajjiShambulingappa
 
