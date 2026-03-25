@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Dhanush Mugajji Shambulingappa — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A personal portfolio website built with React, featuring a space/sci-fi aesthetic with a black and gold theme, smooth animations powered by Framer Motion, and a built-in AI agent that answers questions about me.
 
-## Available Scripts
+## Live Site
 
-In the project directory, you can run:
+[dhanushshambulingappa.github.io/Dhanush-portfolio](https://DhanushMugajjiShambulingappa.github.io/Dhanush-portfolio)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Animated star field background with drifting gold and white stars
+- Smooth scroll navigation with active section highlighting
+- Hero section with animated entrance effects
+- About section with key stats and education details
+- Skills section organized by category
+- Projects section with expandable detail cards
+- Experience section with timeline layout
+- AI Agent powered by Groq (LLaMA 3.3 70B) that answers questions about me
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- React
+- Framer Motion
+- Groq API (LLaMA 3.3 70B)
+- GitHub Pages
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Running Locally
 
-### `npm run build`
+Clone the repository:
+```bash
+git clone https://github.com/DhanushMugajjiShambulingappa/Dhanush-portfolio.git
+cd Dhanush-portfolio
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install dependencies:
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a `.env` file in the root and add your Groq API key:
+```
+GROQ_API_KEY=your-groq-key-here
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start the proxy server:
+```bash
+node server.js
+```
 
-### `npm run eject`
+Start the React app:
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Visit `http://localhost:3000`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contact
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Email: dhanushmush2002@gmail.com
+- LinkedIn: [linkedin.com/in/dhanushshambulingappa](https://linkedin.com/in/dhanushshambulingappa)
+- GitHub: [github.com/DhanushMugajjiShambulingappa](https://github.com/DhanushMugajjiShambulingappa)
