@@ -79,7 +79,7 @@ function AIAgent() {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:3001/api/chat', {
+      const response = await fetch('https://dhanush-proxy.dhanush-ms.workers.dev', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
