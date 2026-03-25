@@ -73,82 +73,99 @@ function Hero() {
       <div style={{ position: 'absolute', bottom: '16px', left: '16px', width: '20px', height: '20px', borderBottom: '2px solid var(--gold)', borderLeft: '2px solid var(--gold)', opacity: 0.4 }} />
       <div style={{ position: 'absolute', bottom: '16px', right: '16px', width: '20px', height: '20px', borderBottom: '2px solid var(--gold)', borderRight: '2px solid var(--gold)', opacity: 0.4 }} />
 
-      <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', padding: '0 2rem' }}>
+      <div style={{ position: 'relative', zIndex: 1, display: 'flex', alignItems: 'center', gap: '4rem', padding: '0 4rem', flexWrap: 'wrap', justifyContent: 'center' }}>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          style={{ fontFamily: 'var(--font-head)', fontSize: '11px', letterSpacing: '4px', color: 'var(--gold)', textTransform: 'uppercase', marginBottom: '1.2rem', opacity: 0.8 }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          style={{ flexShrink: 0 }}
         >
-          // welcome to my universe
+          <div style={{ width: '200px', height: '200px', borderRadius: '50%', border: '3px solid var(--gold)', padding: '4px', background: 'rgba(212,175,55,0.1)' }}>
+            <img
+              src={require('../assets/profile.jpg')}
+              alt="Dhanush Mugajji Shambulingappa"
+              style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover' }}
+            />
+          </div>
         </motion.div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          style={{ fontFamily: 'var(--font-head)', fontSize: 'clamp(2rem, 5vw, 3.8rem)', fontWeight: 900, lineHeight: 1.1, marginBottom: '0.8rem', color: '#fff' }}
-        >
-          Dhanush{' '}
-          <span style={{ color: 'var(--gold)' }}>Mugajji</span>
-          <br />
-          Shambulingappa
-        </motion.h1>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          style={{ fontSize: '1rem', letterSpacing: '2px', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '2rem' }}
-        >
-          ML Engineer &nbsp;·&nbsp; CS Graduate Student &nbsp;·&nbsp; Inventor
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '0.6rem', marginBottom: '2.5rem' }}
-        >
-          {['4.0 GPA @ ASU', 'German Patent Holder', 'Vision-Language Models', 'Autonomous Vehicles'].map((tag) => (
-            <span key={tag} style={{ padding: '0.35rem 1rem', border: '1px solid var(--border)', borderRadius: '30px', fontSize: '12px', color: 'var(--gold)', background: 'rgba(212,175,55,0.06)', letterSpacing: '1px' }}>
-              {tag}
-            </span>
-          ))}
-        </motion.div>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          style={{ maxWidth: '560px', margin: '0 auto 2.5rem', fontSize: '1rem', lineHeight: 1.8, color: 'var(--text-muted)' }}
-        >
-          Building intelligent systems at the intersection of machine learning, computer vision, and real-world reasoning. Currently pursuing my M.S. in Computer Science at Arizona State University.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1 }}
-          style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}
-        >
-          <button
-            onClick={() => scrollTo('projects')}
-            style={{ padding: '0.75rem 2.2rem', background: 'var(--gold)', border: 'none', borderRadius: '6px', color: '#050505', fontSize: '13px', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', cursor: 'pointer', fontFamily: 'var(--font-body)', transition: 'opacity 0.2s' }}
-            onMouseEnter={e => e.target.style.opacity = '0.85'}
-            onMouseLeave={e => e.target.style.opacity = '1'}
+        <div style={{ textAlign: 'left', maxWidth: '600px' }}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            style={{ fontFamily: 'var(--font-head)', fontSize: '11px', letterSpacing: '4px', color: 'var(--gold)', textTransform: 'uppercase', marginBottom: '1.2rem', opacity: 0.8 }}
           >
-            View Projects
-          </button>
-          <button
-            onClick={() => scrollTo('ai')}
-            style={{ padding: '0.75rem 2.2rem', background: 'none', border: '1px solid rgba(212,175,55,0.4)', borderRadius: '6px', color: 'var(--gold)', fontSize: '13px', letterSpacing: '1px', textTransform: 'uppercase', cursor: 'pointer', fontFamily: 'var(--font-body)', transition: 'background 0.2s' }}
-            onMouseEnter={e => e.target.style.background = 'rgba(212,175,55,0.08)'}
-            onMouseLeave={e => e.target.style.background = 'none'}
+            // welcome to my universe
+          </motion.div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            style={{ fontFamily: 'var(--font-head)', fontSize: 'clamp(2rem, 5vw, 3.8rem)', fontWeight: 900, lineHeight: 1.1, marginBottom: '0.8rem', color: '#fff' }}
           >
-            Talk to AI Agent
-          </button>
-        </motion.div>
+            Dhanush{' '}
+            <span style={{ color: 'var(--gold)' }}>Mugajji</span>
+            <br />
+            Shambulingappa
+          </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            style={{ fontSize: '1rem', letterSpacing: '2px', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '2rem' }}
+          >
+            ML Engineer &nbsp;·&nbsp; CS Graduate Student &nbsp;·&nbsp; Inventor
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem', marginBottom: '2.5rem' }}
+          >
+            {['4.0 GPA @ ASU', 'German Patent Holder', 'Vision-Language Models', 'Autonomous Vehicles'].map((tag) => (
+              <span key={tag} style={{ padding: '0.35rem 1rem', border: '1px solid var(--border)', borderRadius: '30px', fontSize: '12px', color: 'var(--gold)', background: 'rgba(212,175,55,0.06)', letterSpacing: '1px' }}>
+                {tag}
+              </span>
+            ))}
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            style={{ maxWidth: '560px', margin: '0 0 2.5rem', fontSize: '1rem', lineHeight: 1.8, color: 'var(--text-muted)' }}
+          >
+            Building intelligent systems at the intersection of machine learning, computer vision, and real-world reasoning. Currently pursuing my M.S. in Computer Science at Arizona State University.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1 }}
+            style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}
+          >
+            <button
+              onClick={() => scrollTo('projects')}
+              style={{ padding: '0.75rem 2.2rem', background: 'var(--gold)', border: 'none', borderRadius: '6px', color: '#050505', fontSize: '13px', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', cursor: 'pointer', fontFamily: 'var(--font-body)', transition: 'opacity 0.2s' }}
+              onMouseEnter={e => e.target.style.opacity = '0.85'}
+              onMouseLeave={e => e.target.style.opacity = '1'}
+            >
+              View Projects
+            </button>
+            <button
+              onClick={() => scrollTo('ai')}
+              style={{ padding: '0.75rem 2.2rem', background: 'none', border: '1px solid rgba(212,175,55,0.4)', borderRadius: '6px', color: 'var(--gold)', fontSize: '13px', letterSpacing: '1px', textTransform: 'uppercase', cursor: 'pointer', fontFamily: 'var(--font-body)', transition: 'background 0.2s' }}
+              onMouseEnter={e => e.target.style.background = 'rgba(212,175,55,0.08)'}
+              onMouseLeave={e => e.target.style.background = 'none'}
+            >
+              Talk to AI Agent
+            </button>
+          </motion.div>
+        </div>
       </div>
     </div>
   );
