@@ -14,8 +14,12 @@ PERSONAL INFO:
 EDUCATION:
 - M.S. Computer Science at Arizona State University, Tempe, AZ
 - GPA: 4.0
+- Started: August 2025
 - Expected graduation: May 2027
 - Relevant coursework: Statistical Machine Learning, Data Visualization, Information Assurance & Security, Knowledge Representation & Reasoning, Semantic Web Mining, Applied Cryptography
+- B.E. Information Science and Engineering at Nitte Meenakshi Institute of Technology, Bengaluru, India
+- CGPA: 7.91
+- Duration: September 2020 to April 2024
 
 SKILLS:
 - Languages: C, C++, HTML, CSS, Python
@@ -26,7 +30,7 @@ SKILLS:
 - Databases: SQL, NoSQL (MongoDB)
 
 EXPERIENCE:
-- Web Developer Intern at Hindustan Aeronautics Limited, Bengaluru, India (Jul 2023 – Aug 2023)
+- Web Developer Intern at Hindustan Aeronautics Limited, Bengaluru, India (Jul 2023 - Aug 2023)
 - Built an Employee Clearance Portal using PL/SQL, HTML, CSS, JavaScript, PHP
 - Reduced manual clearance processing time by 30-40%
 - Implemented role-based access control (RBAC)
@@ -47,7 +51,33 @@ PROJECTS:
    - Stack: Python, PyTorch, OpenCV
 
 PATENT:
-- "Object Detection for Autonomous Vehicles" - German Patent, granted 20/09/2024
+- Title: System for Object Detection for Autonomous Vehicles
+- German Title: System zur Objekterkennung für autonome Fahrzeuge
+- Patent Number: DE 20 2024 105 420
+- Type: Gebrauchsmuster (German Utility Patent)
+- IPC Classification: B60W 40/02
+- Filing Date: 20 September 2024
+- Registration Date: 29 October 2024
+- Institution: Nitte Meenakshi Institute of Technology
+- Co-inventors: Gounder Mohan Sellappa, Naveen Khushi, Venkateshwaralu Poorvika
+- Status: Registered
+- Links: https://depatisnet.dpma.de/DepatisNet/depatisnet?action=bibdat&docid=DE202024105420U1
+
+CERTIFICATION COURSES:
+- DevOps & Google Cloud Computing Foundations, Google Cloud Skill Boost Program 2023-2024
+- Skills and Personality Development Program, NMIT x AICTE 2023
+- Google Cloud Computing Foundations, Google Cloud 2023-2024
+- Entrepreneurship Workshop, IIT Bombay 2022
+- Java Programming Fundamentals, Infosys Springboard 2022
+- Artificial Intelligence, SmartKnower 2022
+
+EXTRA CURRICULAR ACTIVITIES:
+- Officer of Professional Development, Indian Student Association at Arizona State University (2025)
+- Convener of Technical Fest 2024 at Nitte Meenakshi Institute of Technology
+- Co-Convener of Technical Fest 2023 at Nitte Meenakshi Institute of Technology
+- Joint Events Head of Entrepreneurship Club at Nitte Meenakshi Institute of Technology (2023-2024)
+- Events Head of IEEE Club at Nitte Meenakshi Institute of Technology (2023-2024)
+- Volunteer at NGO Arogya Bharathi (2024)
 
 Keep answers concise, accurate, and engaging. Use a tone that reflects Dhanush's technical depth and ambition.`;
 
@@ -118,8 +148,9 @@ function AIAgent() {
   const suggestions = [
     'What projects has Dhanush built?',
     'Tell me about his German patent',
-    'What are his ML skills?',
-    'Where did he intern?',
+    'Tell me about his extra curricular activities',
+    'Do you thiink we should hire him? Why?',
+    'How does he stand out from other developers?',
   ];
 
   return (
