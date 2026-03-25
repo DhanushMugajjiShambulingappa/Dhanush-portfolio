@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import LoadingScreen from './components/LoadingScreen';
+import ScrollProgress from './components/ScrollProgress';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -12,6 +13,7 @@ import Activities from './components/Activities';
 import AIAgent from './components/AIAgent';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import BackToTop from './components/BackToTop';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -41,6 +43,7 @@ function App() {
   return (
     <div className="app">
       <LoadingScreen />
+      <ScrollProgress />
       <Navbar activeSection={activeSection} />
       <main>
         <section id="home"><Hero /></section>
@@ -55,6 +58,7 @@ function App() {
         <section id="contact"><Contact /></section>
       </main>
       <Footer />
+      <BackToTop />
     </div>
   );
 }
