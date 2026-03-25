@@ -64,8 +64,10 @@ function AIAgent() {
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
+  if (messages.length > 1) {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages]);
+  }
+}, [messages]);
 
   const sendMessage = async () => {
     if (!input.trim() || loading) return;
@@ -221,13 +223,16 @@ function AIAgent() {
 
             <div style={{ display: 'flex', gap: '0.8rem' }}>
               <input
-                type="text"
-                value={input}
-                onChange={e => setInput(e.target.value)}
-                onKeyDown={handleKeyDown}
-                placeholder="Ask anything about Dhanush..."
-                style={{ flex: 1, padding: '0.75rem 1.2rem', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--border)', borderRadius: '8px', color: 'var(--text)', fontSize: '0.95rem', fontFamily: 'var(--font-body)', outline: 'none' }}
-              />
+                    type="text"
+                    value={input}
+                    onChange={e => setInput(e.target.value)}
+                    onKeyDown={handleKeyDown}
+                    placeholder="Ask anything about Dhanush..."
+                    autoFocus={false}
+                    tabIndex={-1}
+                    onFocus={e => e.target.removeAttribute('tabindex')}
+                    style={{ flex: 1, padding: '0.75rem 1.2rem', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--border)', borderRadius: '8px', color: 'var(--text)', fontSize: '0.95rem', fontFamily: 'var(--font-body)', outline: 'none' }}
+                />
               <button
                 onClick={sendMessage}
                 disabled={loading || !input.trim()}

@@ -11,6 +11,10 @@ function App() {
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const sections = ['home', 'about', 'skills', 'projects', 'experience', 'ai'];
       for (let id of sections) {
