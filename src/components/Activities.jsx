@@ -4,6 +4,13 @@ import { motion } from 'framer-motion';
 function Activities() {
   const activities = [
     {
+      role: 'Officer of Professional Development',
+      event: 'Indian Student Association',
+      org: 'Arizona State University, Tempe, AZ',
+      year: '2025',
+      description: 'Supporting the professional growth of Indian students at ASU by organizing networking events, career development workshops, and conducting multiple events.',
+    },
+    {
       role: 'Convener',
       event: 'Technical Fest 2024',
       org: 'Nitte Meenakshi Institute of Technology',
