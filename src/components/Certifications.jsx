@@ -5,13 +5,12 @@ function Certifications() {
   const [selected, setSelected] = useState(null);
 
   const certifications = [
-    { title: 'DevOps & Google Cloud Computing Foundations', issuer: 'Google Cloud Skill Boost Program', year: '2023-2024', color: 'rgba(66,133,244,0.15)', border: 'rgba(66,133,244,0.3)' },
-    { title: 'Skills and Personality Development Program', issuer: 'NMIT x AICTE', year: '2023', color: 'rgba(212,175,55,0.1)', border: 'rgba(212,175,55,0.3)' },
-    { title: 'Entrepreneurship Essentials', issuer: 'NPTEL', year: '2023', color: 'rgba(212,175,55,0.1)', border: 'rgba(212,175,55,0.3)' },
-    { title: 'Joy Of Computing Using Python', issuer: 'NPTEL', year: '2022', color: 'rgba(212,175,55,0.1)', border: 'rgba(212,175,55,0.3)' },
-    { title: 'Entrepreneurship Workshop', issuer: 'IIT Bombay', year: '2022', color: 'rgba(180,0,0,0.15)', border: 'rgba(180,0,0,0.3)' },
-    { title: 'Artificial Intelligence', issuer: 'SmartKnower', year: '2022', color: 'rgba(123,47,255,0.15)', border: 'rgba(123,47,255,0.3)' },
-    { title: 'Java Programming Fundamentals', issuer: 'Infosys Springboard', year: '2022', color: 'rgba(0,112,243,0.15)', border: 'rgba(0,112,243,0.3)' },
+    { title: 'DevOps & Google Cloud Computing Foundations', issuer: 'Google Cloud Skill Boost Program', year: '2023-2024', color: 'rgba(66,133,244,0.15)', border: 'rgba(66,133,244,0.3)', image: require('../assets/certificates/devops-google.png') },
+    { title: 'Skills and Personality Development Program', issuer: 'NMIT x AICTE', year: '2023', color: 'rgba(212,175,55,0.1)', border: 'rgba(212,175,55,0.3)', image: require('../assets/certificates/aicte.jpg') },
+    { title: 'Google Cloud Computing Foundations', issuer: 'Google Cloud', year: '2023-2024', color: 'rgba(66,133,244,0.15)', border: 'rgba(66,133,244,0.3)', image: require('../assets/certificates/google-cloud.jpg') },
+    { title: 'Entrepreneurship Workshop', issuer: 'IIT Bombay', year: '2022', color: 'rgba(180,0,0,0.15)', border: 'rgba(180,0,0,0.3)', image: require('../assets/certificates/iit-bombay.png') },
+    { title: 'Java Programming Fundamentals', issuer: 'Infosys Springboard', year: '2022', color: 'rgba(0,112,243,0.15)', border: 'rgba(0,112,243,0.3)', image: require('../assets/certificates/infosys-java.png') },
+    { title: 'Artificial Intelligence', issuer: 'SmartKnower', year: '2022', color: 'rgba(123,47,255,0.15)', border: 'rgba(123,47,255,0.3)', image: require('../assets/certificates/smartknower-ai.png') },
   ];
 
   return (
@@ -77,7 +76,7 @@ function Certifications() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3 }}
               onClick={e => e.stopPropagation()}
-              style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '16px', padding: '2rem', maxWidth: '600px', width: '100%' }}
+              style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '16px', padding: '2rem', maxWidth: '700px', width: '100%' }}
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1.5rem' }}>
                 <div>
@@ -95,13 +94,12 @@ function Certifications() {
                   Close
                 </button>
               </div>
-              <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid var(--border)', borderRadius: '8px', height: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '1rem' }}>
-                <div style={{ fontSize: '13px', color: 'var(--text-muted)', letterSpacing: '1px', textAlign: 'center' }}>
-                  Upload your scanned certificate image to display it here.
-                </div>
-                <div style={{ fontSize: '12px', color: 'var(--gold)', opacity: 0.6, letterSpacing: '1px' }}>
-                  Add image to src/assets/certificates/
-                </div>
+              <div style={{ borderRadius: '8px', overflow: 'hidden', maxHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(255,255,255,0.03)', border: '1px solid var(--border)' }}>
+                <img
+                  src={certifications[selected].image}
+                  alt={certifications[selected].title}
+                  style={{ width: '100%', height: '100%', objectFit: 'contain', maxHeight: '400px' }}
+                />
               </div>
             </motion.div>
           </div>
