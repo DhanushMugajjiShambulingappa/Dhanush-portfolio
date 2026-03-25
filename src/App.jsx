@@ -5,7 +5,12 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
+import Patent from './components/Patent';
+import Certifications from './components/Certifications';
+import Activities from './components/Activities';
 import AIAgent from './components/AIAgent';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -16,7 +21,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'projects', 'experience', 'ai'];
+      const sections = ['home', 'about', 'skills', 'projects', 'experience', 'patent', 'certifications', 'activities', 'ai', 'contact'];
       for (let id of sections) {
         const el = document.getElementById(id);
         if (el) {
@@ -41,8 +46,13 @@ function App() {
         <section id="skills"><Skills /></section>
         <section id="projects"><Projects /></section>
         <section id="experience"><Experience /></section>
+        <section id="patent"><Patent /></section>
+        <section id="certifications"><Certifications /></section>
+        <section id="activities"><Activities /></section>
         <section id="ai"><AIAgent /></section>
+        <section id="contact"><Contact /></section>
       </main>
+      <Footer />
     </div>
   );
 }

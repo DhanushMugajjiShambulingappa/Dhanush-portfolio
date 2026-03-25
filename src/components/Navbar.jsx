@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function Navbar({ activeSection }) {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -15,11 +16,16 @@ function Navbar({ activeSection }) {
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
     { id: 'experience', label: 'Experience' },
+    { id: 'patent', label: 'Patent' },
+    { id: 'certifications', label: 'Certifications' },
+    { id: 'activities', label: 'Activities' },
     { id: 'ai', label: 'AI Agent' },
+    { id: 'contact', label: 'Contact' },
   ];
 
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setMenuOpen(false);
   };
 
   return (
@@ -33,7 +39,7 @@ function Navbar({ activeSection }) {
       justifyContent: 'space-between',
       alignItems: 'center',
       padding: '1rem 3rem',
-      background: scrolled ? 'rgba(5,5,5,0.95)' : 'transparent',
+      background: scrolled ? 'rgba(5,5,5,0.97)' : 'transparent',
       borderBottom: scrolled ? '1px solid var(--border)' : '1px solid transparent',
       transition: 'all 0.3s ease',
     }}>
@@ -42,11 +48,12 @@ function Navbar({ activeSection }) {
         fontSize: '13px',
         letterSpacing: '3px',
         color: 'var(--gold)',
-      }}>
+        cursor: 'pointer',
+      }} onClick={() => scrollTo('home')}>
         DMS<span style={{ color: 'var(--text-muted)', fontWeight: 300 }}> // portfolio</span>
       </div>
 
-      <div style={{ display: 'flex', gap: '0', background: 'rgba(212,175,55,0.06)', border: '1px solid var(--border)', borderRadius: '8px', overflow: 'hidden' }}>
+      <div style={{ display: 'flex', gap: '0', flexWrap: 'wrap', justifyContent: 'flex-end', background: 'rgba(212,175,55,0.06)', border: '1px solid var(--border)', borderRadius: '8px', overflow: 'hidden' }}>
         {navLinks.map((link) => (
           <button
             key={link.id}
@@ -54,9 +61,9 @@ function Navbar({ activeSection }) {
             style={{
               background: activeSection === link.id ? 'var(--gold)' : 'none',
               border: 'none',
-              padding: '0.5rem 1.1rem',
-              fontSize: '11px',
-              letterSpacing: '1.5px',
+              padding: '0.5rem 0.9rem',
+              fontSize: '10px',
+              letterSpacing: '1px',
               textTransform: 'uppercase',
               color: activeSection === link.id ? '#050505' : 'var(--text-muted)',
               cursor: 'pointer',
