@@ -73,14 +73,14 @@ function Hero() {
       <div style={{ position: 'absolute', bottom: '16px', left: '16px', width: '20px', height: '20px', borderBottom: '2px solid var(--gold)', borderLeft: '2px solid var(--gold)', opacity: 0.4 }} />
       <div style={{ position: 'absolute', bottom: '16px', right: '16px', width: '20px', height: '20px', borderBottom: '2px solid var(--gold)', borderRight: '2px solid var(--gold)', opacity: 0.4 }} />
 
-      <div style={{ position: 'relative', zIndex: 1, display: 'flex', alignItems: 'center', gap: '4rem', padding: '0 4rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+      <div className="hero-content" style={{ position: 'relative', zIndex: 1, display: 'flex', alignItems: 'center', gap: '4rem', padding: '0 4rem', flexWrap: 'wrap', justifyContent: 'center' }}>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
           style={{ flexShrink: 0 }}
         >
-          <div style={{ width: '200px', height: '200px', borderRadius: '50%', border: '3px solid var(--gold)', padding: '4px', background: 'rgba(212,175,55,0.1)' }}>
+          <div className="hero-photo" style={{ width: '200px', height: '200px', borderRadius: '50%', border: '3px solid var(--gold)', padding: '4px', background: 'rgba(212,175,55,0.1)' }}>
             <img
               src={require('../assets/profile.jpg')}
               alt="Dhanush Mugajji Shambulingappa"
