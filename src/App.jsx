@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import LoadingScreen from './components/LoadingScreen';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -39,6 +40,7 @@ function App() {
 
   return (
     <div className="app">
+      <LoadingScreen />
       <Navbar activeSection={activeSection} />
       <main>
         <section id="home"><Hero /></section>
