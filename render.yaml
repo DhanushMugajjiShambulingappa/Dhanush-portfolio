@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: dhanush-portfolio-server
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
