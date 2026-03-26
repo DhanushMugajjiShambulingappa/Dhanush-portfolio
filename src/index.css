@@ -126,4 +126,17 @@ body {
     text-align: center !important;
     padding-top: 5rem !important;
   }
+
+  .hero-content {
+    flex-direction: column !important;
+    padding: 8rem 1.5rem 2rem !important;
+    text-align: center !important;
+    gap: 2rem !important;
+  }
+
+  .hero-photo {
+    width: 140px !important;
+    height: 140px !important;
+    margin-top: 2rem !important;
+  }
 }
