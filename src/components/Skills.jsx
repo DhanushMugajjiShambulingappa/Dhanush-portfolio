@@ -3,30 +3,13 @@ import { motion } from 'framer-motion';
 
 function Skills() {
   const skillGroups = [
-    {
-      category: 'Languages',
-      skills: ['Python', 'C', 'C++', 'HTML', 'CSS'],
-    },
-    {
-      category: 'Machine Learning',
-      skills: ['PyTorch', 'TensorFlow', 'HuggingFace', 'LoRA', 'CNN', 'Knowledge Graphs', 'Fine-Tuning VLMs'],
-    },
-    {
-      category: 'Data Science',
-      skills: ['Data Cleaning', 'Data Preprocessing', 'Data Visualization', 'Big Data Analytics', 'PowerBI'],
-    },
-    {
-      category: 'Frameworks & Libraries',
-      skills: ['Flask', 'Pandas', 'NumPy', 'OpenCV'],
-    },
-    {
-      category: 'Dev & Deployment',
-      skills: ['Docker', 'GitHub', 'CI/CD', 'AWS', 'SLURM', 'Android Studio'],
-    },
-    {
-      category: 'Databases',
-      skills: ['SQL', 'MongoDB'],
-    },
+    { category: 'Languages', skills: ['Python', 'C', 'C++', 'Java', 'HTML', 'CSS'] },
+    { category: 'Machine Learning', skills: ['PyTorch', 'TensorFlow', 'HuggingFace', 'LoRA', 'CNN', 'Knowledge Graphs', 'Fine-Tuning VLMs', 'Classification', 'Regression', 'Predictive Modelling'] },
+    { category: 'Computer Vision', skills: ['OpenCV', 'YOLOv5', 'Object Detection', 'Image Annotation', 'FP16 Inference', 'Dataset Management'] },
+    { category: 'Data Science', skills: ['Data Cleaning', 'Data Preprocessing', 'Data Visualization', 'Big Data Analytics', 'PowerBI', 'Pandas', 'NumPy'] },
+    { category: 'Frameworks & Libraries', skills: ['Flask', 'ConceptNet', 'HuggingFace Transformers'] },
+    { category: 'Dev & Deployment', skills: ['Docker', 'Git', 'GitHub', 'CI/CD', 'AWS', 'Google Cloud', 'SLURM', 'Android Studio', 'Jupyter Notebook'] },
+    { category: 'Databases', skills: ['SQL', 'MongoDB'] },
   ];
 
   return (
