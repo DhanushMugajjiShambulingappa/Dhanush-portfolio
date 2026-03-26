@@ -129,14 +129,21 @@ body {
 
   .hero-content {
     flex-direction: column !important;
-    padding: 8rem 1.5rem 2rem !important;
+    padding: 8rem 1.5rem 4rem !important;
     text-align: center !important;
     gap: 2rem !important;
+    justify-content: center !important;
   }
 
   .hero-photo {
     width: 140px !important;
     height: 140px !important;
     margin-top: 2rem !important;
+  }
+
+  .hero-wrapper {
+    height: auto !important;
+    min-height: 100vh !important;
+    padding-bottom: 3rem !important;
   }
 }
