@@ -27,7 +27,8 @@ function Footer() {
               DMS <span style={{ color: 'var(--text-muted)', fontWeight: 300 }}>// portfolio</span>
             </div>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', maxWidth: '300px', lineHeight: 1.7 }}>
-              ML Engineer · CS Graduate Student · Inventor
+              {/*ML Engineer · CS Graduate Student · Inventor*/}
+              CS Graduate Student
             </p>
           </div>
 
