@@ -71,9 +71,9 @@ function Footer() {
           <p style={{ fontSize: '13px', color: 'var(--text-muted)', letterSpacing: '1px' }}>
             © 2026 Dhanush Mugajji Shambulingappa. All rights reserved.
           </p>
-          <p style={{ fontSize: '13px', color: 'var(--text-muted)', letterSpacing: '1px' }}>
+          {/* <p style={{ fontSize: '13px', color: 'var(--text-muted)', letterSpacing: '1px' }}>
             Built with React · Deployed on GitHub Pages
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>
