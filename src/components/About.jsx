@@ -5,8 +5,6 @@ function About() {
   const stats = [
     { value: '4.0', label: 'GPA at ASU' },
     { value: '1', label: 'German Patent' },
-    { value: '85GB', label: 'Dataset Built' },
-    { value: '2.9B', label: 'Model Parameters' },
   ];
 
   return (
