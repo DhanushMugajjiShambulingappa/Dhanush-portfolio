@@ -158,7 +158,7 @@ function AIAgent() {
           viewport={{ once: true }}
         >
           <div style={{ fontFamily: 'var(--font-head)', fontSize: '11px', letterSpacing: '4px', color: 'var(--gold)', textTransform: 'uppercase', marginBottom: '0.8rem', opacity: 0.8 }}>
-            // powered by groq · llama 3.3 70b
+            // powered by AI
           </div>
           <h2 style={{ fontFamily: 'var(--font-head)', fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 700, color: '#fff', marginBottom: '1.5rem' }}>
             Ask My AI Agent
