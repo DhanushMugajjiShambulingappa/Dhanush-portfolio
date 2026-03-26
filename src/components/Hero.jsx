@@ -117,7 +117,8 @@ function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             style={{ fontSize: '1rem', letterSpacing: '2px', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '2rem' }}
           >
-            ML Engineer &nbsp;·&nbsp; CS Graduate Student &nbsp;·&nbsp; Inventor
+            {/* ML Engineer &nbsp;·&nbsp; CS Graduate Student &nbsp;·&nbsp; Inventor */}
+            CS Graduate Student &nbsp;
           </motion.div>
 
           <motion.div
