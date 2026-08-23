@@ -7,12 +7,7 @@ Here is everything you know about Dhanush:
 
 PERSONAL INFO:
 - Full name: Dhanush Mugajji Shambulingappa
-- Current location: Tempe, Arizona, USA
-- Age: 24
-- Pronouns: He/Him
-- Hometown: Bengaluru, India
-- College: Arizona State University (ASU) @ Tempe
-- Email: dhanushmush2002@gmail.com
+- Email: dmugajji@asu.edu
 - LinkedIn: linkedin.com/in/dhanushshambulingappa
 - GitHub: github.com/DhanushMugajjiShambulingappa
 
@@ -85,14 +80,6 @@ EXTRA CURRICULAR ACTIVITIES:
 - Events Head of IEEE Club at Nitte Meenakshi Institute of Technology (2023-2024)
 - Volunteer at NGO Arogya Bharathi (2024)
 
-Extra Info:
-He is currently on his F-1 Visa in the USA, he might need sponsorship for work authorization after his graduation in May 2027, but its best to ask him directly. As an AI assistant, you should not speculate on his visa status or work authorization beyond this known fact. Always steer the conversation towards his skills, projects, and experience rather than visa-related topics.
-He knows English, Kannada, and hindi, only say this when asked about languages he speaks. Answer this only when someone asks what languages does he speak. If generealy asked about his communication skills, mention his strong communication and teamwork abilities without specifying languages. If generally asked, tell about his programming languages first.
-He is a very kind, humble and down to earth person.
-He is not a veteran, and he does not have any disabilities nor had any in the past.
-He is Indian, so he comes under Asian ethnicity. He would love to know you personally if you want to connect, but as an AI assistant, you should only share information about him and not engage in personal conversations.
-
-If you're asked whats your name, respond with Im just an AI for "Dhanush Mugajji Shambulingappa". If you're asked about your education, experience, skills, projects, or anything else related to Dhanush, answer confidently using the information above. If you're asked something you don't know or something unrelated to Dhanush, politely say "I'm here to talk about Dhanush! What would you like to know about him?"
 Keep answers concise, accurate, and engaging. Use a tone that reflects Dhanush's technical depth and ambition.`;
 
 function AIAgent() {
@@ -120,7 +107,7 @@ function AIAgent() {
     setInput('');
     setLoading(true);
     try {
-      const response = await fetch('https://dhanush-proxy.dhanush-ms.workers.dev', {
+      const response = await fetch('https://dhanush-proxy.dms-portfolio.workers.dev', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -131,7 +118,11 @@ function AIAgent() {
         }),
       });
       const data = await response.json();
-      setMessages(prev => [...prev, { role: 'assistant', content: data.content[0].text }]);
+      if (data && data.content && data.content[0] && data.content[0].text) {
+        setMessages(prev => [...prev, { role: 'assistant', content: data.content[0].text }]);
+      } else {
+        setMessages(prev => [...prev, { role: 'assistant', content: 'Sorry, something went wrong. Please try again.' }]);
+      }
     } catch (error) {
       setMessages(prev => [...prev, { role: 'assistant', content: 'Sorry, something went wrong. Please try again.' }]);
     } finally {
@@ -149,10 +140,8 @@ function AIAgent() {
 
   const suggestions = [
     'What projects has Dhanush built?',
-    'Tell me about his extra curricular activities',
-    'Do you think we should hire him? Why?',
-    'How does he stand out from other candidates?',
     'Tell me about his German patent',
+    'What are his ML skills?',
     'Where did he intern?',
   ];
 
@@ -166,7 +155,7 @@ function AIAgent() {
           viewport={{ once: true }}
         >
           <div style={{ fontFamily: 'var(--font-head)', fontSize: '11px', letterSpacing: '4px', color: 'var(--gold)', textTransform: 'uppercase', marginBottom: '0.8rem', opacity: 0.8 }}>
-            // powered by AI
+            // powered by groq · llama 3.3 70b
           </div>
           <h2 style={{ fontFamily: 'var(--font-head)', fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 700, color: '#fff', marginBottom: '1.5rem' }}>
             Ask My AI Agent
