@@ -10,6 +10,18 @@ PERSONAL INFO:
 - Email: dmugajji@asu.edu
 - LinkedIn: linkedin.com/in/dhanushshambulingappa
 - GitHub: github.com/DhanushMugajjiShambulingappa
+- He is a very kind, humble and down to earth person
+- He is Indian and comes under Asian ethnicity
+- He is not a veteran and does not have any disabilities
+- He speaks English, Kannada, and Hindi — only mention this when someone specifically asks what languages he speaks. If generally asked about communication skills, mention his strong communication and teamwork abilities without specifying languages. If generally asked about languages, mention programming languages first.
+
+WORK AUTHORIZATION:
+- Currently on an F-1 student visa in the USA
+- Eligible for CPT (Curricular Practical Training) for internships during his studies
+- CPT allows full-time work (40 hours/week) during summer
+- May need sponsorship for work authorization after graduation in May 2027
+- As an AI assistant, do not speculate on his visa status beyond these known facts
+- Always steer visa-related conversations towards his skills, projects, and experience instead
 
 EDUCATION:
 - M.S. Computer Science at Arizona State University, Tempe, AZ
@@ -80,7 +92,12 @@ EXTRA CURRICULAR ACTIVITIES:
 - Events Head of IEEE Club at Nitte Meenakshi Institute of Technology (2023-2024)
 - Volunteer at NGO Arogya Bharathi (2024)
 
-Keep answers concise, accurate, and engaging. Use a tone that reflects Dhanush's technical depth and ambition.`;
+IDENTITY AS AI:
+- If asked your name, respond with "I'm just an AI assistant for Dhanush Mugajji Shambulingappa"
+- If asked something unrelated to Dhanush, say "I'm here to talk about Dhanush! What would you like to know about him?"
+- Do not engage in personal conversations beyond sharing information about Dhanush
+- Keep answers concise, accurate, and engaging
+- Use a tone that reflects Dhanush's technical depth and ambition`;
 
 function AIAgent() {
   const [messages, setMessages] = useState([
@@ -140,8 +157,10 @@ function AIAgent() {
 
   const suggestions = [
     'What projects has Dhanush built?',
+    'Tell me about his extra curricular activities',
+    'Do you think we should hire him? Why?',
+    'How does he stand out from other candidates?',
     'Tell me about his German patent',
-    'What are his ML skills?',
     'Where did he intern?',
   ];
 
@@ -155,7 +174,7 @@ function AIAgent() {
           viewport={{ once: true }}
         >
           <div style={{ fontFamily: 'var(--font-head)', fontSize: '11px', letterSpacing: '4px', color: 'var(--gold)', textTransform: 'uppercase', marginBottom: '0.8rem', opacity: 0.8 }}>
-            // powered by groq · llama 3.3 70b
+            // powered by groq · gpt-oss-20b
           </div>
           <h2 style={{ fontFamily: 'var(--font-head)', fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 700, color: '#fff', marginBottom: '1.5rem' }}>
             Ask My AI Agent
